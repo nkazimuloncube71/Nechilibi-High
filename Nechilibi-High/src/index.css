@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  color: #24202b;
+  background: #fffefa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --purple: #33204e;
+  --purple-deep: #241538;
+  --purple-soft: #ebe6f0;
+  --cream: #f7f2e7;
+  --ink: #24202b;
+  --muted: #716b76;
+  --line: #e9e5e9;
+  --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+* { box-sizing: border-box; }
+body { min-width: 360px; margin: 0; }
+body, button, input, select, textarea { font-family: "DM Sans", "Segoe UI", sans-serif; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button, a { color: inherit; }
+a { text-decoration: none; }
+button { font-size: inherit; }
+img { display: block; max-width: 100%; }
+::selection { color: #fff; background: #5b3b76; }
+:focus-visible { outline: 3px solid #c59d50; outline-offset: 3px; }
