@@ -9,15 +9,12 @@ function About() {
       <div className="page-width about-grid">
         <div className="about-visual">
           <div className="about-photo-main">
-            <img src={image('image6.jpg')} alt="Nechilibi students and a teacher together at school" loading="lazy" />
+            <img src={image('image10.png')} alt="Nechilibi students gathered at school" loading="lazy" />
           </div>
           <div className="about-photo-small">
             <img src={image('image3.png')} alt="Students attending a school gathering" loading="lazy" />
           </div>
-          <div className="about-photo-accent">
-            <img src={image('image10.png')} alt="Nechilibi students gathered at school" loading="lazy" />
-          </div>
-          <div className="about-stamp"><span>LEARN</span><b>✳</b><span>BELONG</span></div>
+          <div className="about-stamp"><span>LEARN</span><span>BELONG</span></div>
           <span className="image-caption">A community built around possibility</span>
         </div>
         <div className="about-copy">
