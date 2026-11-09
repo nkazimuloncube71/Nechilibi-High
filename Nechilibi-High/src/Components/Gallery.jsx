@@ -22,7 +22,7 @@ function Gallery() {
             copy="Our learners, our community, our moments. Take a look around."
             light
           />
-          <ArrowLink href="#contact" light>Come and see for yourself</ArrowLink>
+          <ArrowLink href="/contact" light>Come and see for yourself</ArrowLink>
         </div>
         <div className="gallery-grid">
           {galleryItems.map((item, index) => (

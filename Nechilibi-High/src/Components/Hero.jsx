@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { image } from './data'
 
 function Hero() {
@@ -13,12 +14,12 @@ function Hero() {
             A welcoming community where young people are inspired to learn, find their strengths and shape a brighter future.
           </p>
           <div className="hero-actions">
-            <a className="button button-cream" href="#about">Explore our school <span aria-hidden="true">↗</span></a>
-            <a className="button button-outline" href="#portal">Student portal <span aria-hidden="true">↗</span></a>
+            <Link className="button button-cream" to="/about">Explore our school <span aria-hidden="true">↗</span></Link>
+            <Link className="button button-outline" to="/student-portal">Student portal <span aria-hidden="true">↗</span></Link>
           </div>
         </div>
         <div className="hero-caption"><span>01</span> LEARN WITH PURPOSE <i /> GROW WITH CONFIDENCE</div>
-        <a className="scroll-cue" href="#about" aria-label="Scroll to discover"><span>↓</span></a>
+        <Link className="scroll-cue" to="/about" aria-label="Scroll to discover"><span>↓</span></Link>
       </section>
 
       <section className="intro-strip" aria-label="Our promise">

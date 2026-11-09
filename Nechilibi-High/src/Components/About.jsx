@@ -38,7 +38,7 @@ function About() {
             <span className="mini-label">WHAT GUIDES US</span>
             <div>{schoolValues.map((value) => <span className="value-chip" key={value}>{value}</span>)}</div>
           </div>
-          <ArrowLink href="#academics">Discover our approach</ArrowLink>
+          <ArrowLink href="/academics">Discover our approach</ArrowLink>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ const newsItems = [
     title: 'Small moments. Big memories.',
     description: 'Discover the friendships, shared experiences and everyday achievements that shape life at Nechilibi.',
     link: 'Explore school life',
-    href: '#gallery',
+    href: '/gallery',
     featured: true,
   },
   {
@@ -21,7 +21,7 @@ const newsItems = [
     title: 'Learning by doing',
     description: 'Hands-on experiences help learners ask questions, test ideas and see new possibilities.',
     link: 'Our approach to learning',
-    href: '#academics',
+    href: '/academics',
   },
   {
     image: 'Football.jpg',
@@ -31,7 +31,7 @@ const newsItems = [
     title: 'Growing stronger together',
     description: 'Sport and shared activities build confidence, resilience and a strong sense of belonging.',
     link: 'See our gallery',
-    href: '#gallery',
+    href: '/gallery',
   },
 ]
 

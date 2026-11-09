@@ -1,15 +1,16 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { image } from './data'
 
 export function Logo({ light = false }) {
   return (
-    <a className={`brand${light ? ' brand-light' : ''}`} href="#home" aria-label="Nechilibi High School home">
+    <Link className={`brand${light ? ' brand-light' : ''}`} to="/" aria-label="Nechilibi High School home">
       <img src={image('nechilibi-logo.png')} alt="" />
       <span className="brand-copy">
         <strong>NECHILIBI</strong>
         <span>HIGH SCHOOL</span>
       </span>
-    </a>
+    </Link>
   )
 }
 
@@ -25,9 +26,9 @@ export function SectionHeading({ eyebrow, title, copy, light = false }) {
 
 export function ArrowLink({ href, children, light = false }) {
   return (
-    <a className={`arrow-link${light ? ' arrow-link-light' : ''}`} href={href}>
+    <Link className={`arrow-link${light ? ' arrow-link-light' : ''}`} to={href}>
       {children}<span aria-hidden="true">↗</span>
-    </a>
+    </Link>
   )
 }
 

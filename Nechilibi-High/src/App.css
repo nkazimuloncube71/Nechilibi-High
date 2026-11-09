@@ -12,7 +12,9 @@
 .main-nav { display: flex; align-items: center; gap: clamp(13px, 1.65vw, 26px); }
 .main-nav a { position: relative; color: #48414f; font-size: 11px; font-weight: 600; white-space: nowrap; transition: color .2s ease; }
 .main-nav a:hover { color: #7d5b9b; }
+.main-nav a.nav-active { color: #73518f; font-weight: 800; }
 .main-nav .nav-portal { padding: 11px 15px; border: 1px solid #dcd3e3; border-radius: 3px; color: var(--purple); }
+.main-nav .nav-portal.nav-active { background: #f2edf5; }
 .menu-toggle { display: none; }
 .hero { position: relative; min-height: min(730px, calc(100svh - 82px)); min-height: clamp(570px, 48vw, 730px); overflow: hidden; color: #fff; background: var(--purple-deep); }
 .hero-image,.hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -58,6 +60,11 @@
 .about-extra { margin: 14px 0 24px; }
 .story-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 18px 0; }
 .story-row p { margin-top: 7px; color: #716977; font-size: 10px; line-height: 1.65; }
+.staff-section { background: var(--cream); }
+.staff-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(45px, 8vw, 100px); }
+.staff-photo { height: 420px; overflow: hidden; background: #ded8d2; }
+.staff-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.staff-copy > p { max-width: 520px; margin: 20px 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
 .vision-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .mini-label { color: #8d799a; font-size: 8px; font-weight: 800; letter-spacing: .15em; }
 .vision-row p { margin: 8px 0 0; color: #514a57; font-family: var(--serif); font-size: 15px; line-height: 1.45; }
@@ -211,6 +218,8 @@
   .about-visual { min-height: 450px; }
   .about-photo-main { height: 365px; }
   .about-photo-small { height: 205px; }
+  .staff-grid { gap: 45px; }
+  .staff-photo { height: 365px; }
 }
 @media (max-width: 850px) {
   .page-width { width: min(100% - 48px, 680px); }
@@ -227,11 +236,13 @@
   .intro-inner { min-height: 130px; }
   .intro-values { gap: 11px; font-size: 8px; }
   .section-pad { padding-block: 82px; }
-  .about-grid,.admissions-grid,.portal-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-grid,.admissions-grid,.portal-grid,.staff-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-visual { width: min(100%, 560px); min-height: 480px; }
   .about-photo-main { width: 76%; height: 390px; }
   .about-photo-small { width: 48%; height: 220px; }
   .about-copy { max-width: 610px; }
+  .staff-photo { width: min(100%, 560px); height: 370px; }
+  .staff-copy { max-width: 610px; }
   .subject-card { min-height: 175px; padding: 23px; }
   .admissions-grid { gap: 36px; }
   .admissions-copy { max-width: 600px; }
@@ -271,6 +282,7 @@
   .about-visual { min-height: 370px; }
   .about-photo-main { width: 82%; height: 300px; }
   .about-photo-small { right: -2px; bottom: 28px; width: 48%; height: 165px; padding: 6px; }
+  .staff-photo { height: 300px; }
   .about-stamp { top: 20px; right: -3px; width: 74px; height: 74px; font-size: 7px; }
   .image-caption { font-size: 8px; }
   .section-heading h2,.admissions-copy h2,.portal-copy h2,.gallery-heading h2,.contact-heading h2 { font-size: 36px; }

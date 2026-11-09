@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ArrowLink, SectionHeading } from './shared'
 
 const subjects = [
@@ -21,7 +22,7 @@ function Academics() {
             title={<>An education that opens<br /><em>doors and minds.</em></>}
             copy="Strong foundations, inspiring teaching and the space to explore—so our learners are ready for what comes next."
           />
-          <ArrowLink href="#admissions">Explore admissions</ArrowLink>
+          <ArrowLink href="/admissions">Explore admissions</ArrowLink>
         </div>
         <div className="subject-grid">
           {subjects.map((subject) => (
@@ -36,7 +37,7 @@ function Academics() {
         <div className="learning-note">
           <span className="learning-symbol" aria-hidden="true">✦</span>
           <p><strong>More than a syllabus.</strong> We encourage collaboration, self-belief and a lifelong love of learning.</p>
-          <a href="#gallery" aria-label="See student life">See student life <span aria-hidden="true">↗</span></a>
+          <Link to="/gallery" aria-label="See student life">See student life <span aria-hidden="true">↗</span></Link>
         </div>
       </div>
     </section>
